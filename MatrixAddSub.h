@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #define AddSubM 10
 
-//¾ØÕó¼Ó¼õ  MatrixAddSub
 void MatrixAddSub()
 {
     int matrix1[AddSubM][AddSubM],matrix2[AddSubM][AddSubM],result[AddSubM][AddSubM];
-    int row,column;//ÐÐ ÁÐ
+    int row,column;//行和列
     int i,j;
     int choice;
     char ch,enter;
@@ -77,4 +76,3 @@ void MatrixAddSub()
     printf("%c",enter);
     return;
 }
-
