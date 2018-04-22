@@ -2,27 +2,15 @@
 #include <stdlib.h>
 #include <math.h>
 #define transN 10
-//主函数里加上case 5:ret = MatricialRank(); printf("The matricial rank is %d", ret);
-int Matri_cialRank()
+
+int Matri_cialRank(int (*matrix)[transN], int row ,int column)
 {
-    int matrix[transN][transN],col[transN],simplify[transN];
-    int row,column,i,j,k,p;
+    int col[transN],simplify[transN];
+    int i,j,k,p;
     int div,what,divsim;
     int startrow=0,startcol=0;
     int flag=1;
     int num = 0;
-    printf("|-------------------------------------------|\n");
-    printf("   This is a calculator to seek the rank of a matrix .\n\n");
-    printf("^_^Please input the row and the column of the matrix:");
-    scanf("%d%d",&row,&column);
-    printf("^_^Please input the elements of the matrix:\n");
-    for(i=0;i<row;i++)
-    {
-        for(j=0;j<column;j++)
-        {
-            scanf("%d",&matrix[i][j]);
-        }
-    }
     while(startrow<row-1 && startcol<column-1)
     {
         j=0;
@@ -122,6 +110,5 @@ int Matri_cialRank()
             }
         }
     }
-    printf("The matricial rank is %d", num);
     return num;
 }
