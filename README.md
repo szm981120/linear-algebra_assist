@@ -9,5 +9,8 @@ The present functions it can achieve are as follows:
 	5.Seek the rank of the appointed matrix.
 	6.See if the vectors of a matrix is correlation.
 	7.Cramer's rule using.
+	8.Judge the quadratic form whether it is positive or negative definite.
+	9.Consider the properties of solutions of linear equations
+	10.Seek the inverse matrix of the appointed matrix.
 	
 Thank you!
